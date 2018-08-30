@@ -1,0 +1,204 @@
+/* ========== INICIO - RESET DOS OBJETOS EM QUALQUER NAVEGADORES ========== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ========== FINAL - RESET DOS OBJETOS EM QUALQUER NAVEGADORES ========== */
+/* ==========          INICIO - TELA DE LOGIN                   ========== */
+/* div caixa formulário */
+.referenciaPosicao{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.login{
+	margin: 4rem auto auto auto;
+	text-align: left;
+	width: 21rem;
+	border: .2rem solid black;
+	border-radius: 1rem;
+	background-color: white;
+	padding: 3em 1em;
+}
+.login .caixaTexto{
+	position: relative;
+}
+.login .caixaTexto input {
+	width: 100%;
+	padding: 0.6em 0;
+	font-size: 1.125em;
+	color: solid black;
+	letter-spacing: 0.06em;
+	margin-bottom: 2em;
+	border: none;
+	/*border-radius: .5em;*/
+	border-bottom: 0.09em solid grey;
+	outline: none;
+	background: transparent;
+	transition: all .5s ease-out 0s;
+}
+.login .caixaTexto label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	letter-spacing: 0.06em;
+	padding: .7em 0em;
+	font-size: 1.125em;
+	color: black;
+	pointer-events: none;
+	transition: all .4s ease-out 0s;
+}
+/* efeitos */
+.login .caixaTexto input:focus{
+	border-bottom: 0.09em solid #19d608;
+}
+.login .caixaTexto input:focus ~ label,
+.login .caixaTexto input:valid ~ label{
+	top: -1.4em;
+	left: 0;
+	color: #19d608;
+	font-size: 0.9em;
+}
+.btnLogin{
+	background-color: #19d608;
+	color: white;
+	padding: 1em 1.25em;
+	margin: .5em  0em;
+	border: none;
+	border-radius: .5em;
+	cursor: pointer;
+	width: 100%;
+	outline: none;
+	transition: opacity .5s ease-out 0s;
+}
+.btnLogin:hover{
+	opacity: 0.7;
+}
+.imgContainer{
+	border-radius: 50%;
+	text-align: center;
+	margin: 2rem 0 2rem 0;
+}
+img.avatar{
+	width: 50%;
+	border-radius: 50%;
+	border: .1rem solid #19d608;
+}
+
+/* ==========          FINAL - TELA DE LOGIN                   ========== */
+
+/* ==========          INICIO - MENU FIXO                      ========== */
+#Menu {
+	position: fixed;
+	right: 0;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+#Menu ul {
+	margin: 0;
+	padding: 0rem;
+	background-color: #19d608;
+	list-style: none;
+	text-align: center;
+}
+#Menu ul li {
+	display: inline;
+}
+#Menu ul li a{
+	opacity: 1;
+	padding: 1rem 4rem;
+	display: inline-block;
+
+	/* visual dos links */
+	color: white;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2rem;
+	border-radius: 0rem;
+	transition: all .175s ease-in 0s;
+}
+#Menu ul li a:hover{
+	color: rgb(51, 51, 51);
+	background-color: white;
+	transform: scale(1);
+}
+
+/* ==========          FINAL - MENU FIXO                       ========== */
+.fundo{
+	width: 100%;
+	height: 100%;
+	padding-top: 4rem;
+	background-color: white;
+	color: black;
+}
+
+
+/* MOBILE DEVICES */
+/* smartphones */
+@media screen and (max-width: 480px){
+	.matricula{
+		display: block;
+		float: none;
+	}
+	form{
+		margin: 2.5rem auto auto auto;
+		text-align: left;
+		width: 20rem;
+		border: 0.2rem solid black;
+		border-radius: 1rem;
+		background-color: white;
+	}
+}
+/* tablets */
+@media screen and (max-width: 768px){
+	.matricula{
+		display: block;
+		float: none;
+	}
+}

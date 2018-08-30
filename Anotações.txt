@@ -1,0 +1,8 @@
+Fazer o site todo em apenas um arquivo.
+Para isso, utilizar javascript para poder exibir ao usuário a parte respectiva ao seu acesso.
+
+1rem é equivalente a 16.8px(Nos meus teste mais perto de 16.0px)
+No margin, 1 rem é equivalente a 10px '_'
+
+OBS¹: Mostrar prévias dos cursos em circulos flutuantes no pagina de login.
+OBS²: Decidir cor de fundo da home de login apenas com HTML
